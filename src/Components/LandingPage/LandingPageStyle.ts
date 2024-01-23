@@ -2,17 +2,28 @@ import styled from "styled-components";
 const LandingPageStyle = styled.div`
   background-color: #656e77;
   .landingpage__container {
-    padding: 80px;
+    padding: 60px;
     width: 100vw;
     height: 100vh;
   }
+
+  .designs{
+  .home__button{
+      position: absolute;
+      z-index: 2;
+      top: 60px;
+      left: 60px;
+      cursor: pointer;
+    }
+  }
+     
 
   .svg-container {
     position: absolute;
     top: 20px;
     left: 20px;
     fill: #e6e6e7;
-    z-index: 1;
+    // z-index: 1;
   }
 
   .svg-container2 {
@@ -49,6 +60,7 @@ const LandingPageStyle = styled.div`
     }
     h1{
         display: none;
+        color:#fff;
     }
   }
 
@@ -82,20 +94,41 @@ const LandingPageStyle = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    margin-top: -20px;
+    margin-top: 50px;
+    padding-top: 50px;
     flex-direction: column;
     z-index: 20;
+    // overflow: auto;
   }
+
+.header__container::-webkit-scrollbar{
+  display: none;
+}
+
+
 .header__container{
-    width: 80%;
+  // box-shadow: 25px 25px 50px #808080;
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  // cursor: pointer;
+  z-index:2;
+
+  h3{
+    font-size: 50px;
+    // margin-bottom: -20px;
+    color: #fff;
+   }
+  
 
 }
 
 
+
   .nav{
-    width: 20%;
+    width: fit-content;
     position: absolute;
     bottom: 60px;
     .section__ul{
@@ -111,30 +144,32 @@ const LandingPageStyle = styled.div`
           cursor: pointer;
           width: fit-content;
           p {
-            // color: #00246B;
             font-weight: 600;
-            padding: 10px 10px 10px 0;
+            padding: 10px 10px 5px 10px;
           }
         }
       }
     
       .underline {
-        // position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        background: red;
         height: 2px;
-        background-color: #000;
+        background-color: #fff;
       }
     
       .active{
         color: #fff;
-        transition: color 1s ease-in;
+        transition: color 0.5s ease-in, border-right 0.5s ease-in;
+        border-right: 2px solid #fff;
       }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1028px) {
+.homepage{
+  padding-top: 70px;
+}
+
+  
+
+
     .profile {
       font-size: 10px;
       h1{
@@ -149,10 +184,29 @@ const LandingPageStyle = styled.div`
   }
 
   .main__content__container{
+    gap: 150px;
+    margin-top: 0;
+    justify-content: center;
+    
+    padding-top:0;
     flex-direction: row;
+
+    h3{
+      font-size: 100px;
+      margin-bottom: -20px;
+     }
+    
+    .header__container{
+      display: flex;
+      justify-content: center;
+      margin-bottom: -100px;
+      height: 90%;
+      width: 60%;
+  }
     .nav{
     position: relative;
     bottom: 0;
+    
 
     }
   }

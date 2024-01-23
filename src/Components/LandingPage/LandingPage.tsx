@@ -1,13 +1,15 @@
 import LandingPageStyle from "./LandingPageStyle";
-import Header from "../Header/Header";
 import Socials from "../SocialsContainer/Socials";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import profile__picture from "../../assets/images/my_image__black.jpg";
+import AboutMe from "../About/AboutMe";
+import ProjectGroup from "../ProjectGroup/ProjectGroup";
+import ExperienceGroup from "../ExperienceGroup/ExperienceGroup";
 
 const LandingPage = (): JSX.Element => {
   const [enlarge, setEnlarge] = useState<boolean>(false);
-  const [selectedPath, setSelectedPath] = useState<string>("aboutMe");
+  const [selectedPath, setSelectedPath] = useState<string>("home");
 
   const selectorHandler = (path: string) => {
     setSelectedPath(path);
@@ -17,14 +19,13 @@ const LandingPage = (): JSX.Element => {
     setEnlarge(!enlarge);
   };
 
-  // const reduceImage= ()=>{
-  //     setEnlarge(false)
-  // }
-
   return (
     <LandingPageStyle>
       <div className="landingpage__container">
         <div className="designs">
+          <h1 onClick={() => selectorHandler("home")} className="home__button">
+            E.A
+          </h1>
           <Socials />
           <div className="svg-container">
             <svg
@@ -78,7 +79,24 @@ const LandingPage = (): JSX.Element => {
         </div>
 
         <div className="main__content__container">
-          <Header />
+          <div className="header__container">
+            {selectedPath === "home" ? (
+              <div className="homepage">
+                <h3>Welcome</h3>
+                <h1>I'm Ezekiel Ajayi</h1>
+                <p>
+                  a frontend developer with deep fondness for creating
+                  user-friendly websites and web applications. This is where I
+                  show you the journey I've embarked on in the ever-evolving
+                  world of software development.
+                </p>
+              </div>
+            ) : null}
+            {selectedPath === "aboutMe" ? <AboutMe /> : null}
+            {selectedPath === "projects" ? <ProjectGroup /> : null}
+            {selectedPath === "experience" ? <ExperienceGroup /> : null}
+          </div>
+
           <div className="nav">
             <ul className={`section__ul`}>
               <li
@@ -93,7 +111,6 @@ const LandingPage = (): JSX.Element => {
                   <motion.div className="underline" layoutId="underline" />
                 ) : null}
               </li>
-
               <li
                 onClick={() => {
                   selectorHandler("projects");

@@ -5,7 +5,7 @@ const SocialsStyle = styled.div`
 .main__container{
     background-color: #000;
     // width: 4px;
-
+    
     position: absolute;
     left: 0px;
     bottom: 40px;
@@ -18,8 +18,8 @@ const SocialsStyle = styled.div`
    }
 
 img{
-       width: 40px;
-       padding: 10px 5px;
+       width: 35px;
+       padding: 7px;
    }
 
    .img1{
@@ -59,6 +59,15 @@ img{
 }
 
 .instagram:hover{
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+    }
+}
+
+.email:hover{
     .img1{
         display: none;
     }
