@@ -5,6 +5,7 @@ const LandingPageStyle = styled.div`
     padding: 60px;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
   }
 
   .designs{
@@ -94,7 +95,6 @@ const LandingPageStyle = styled.div`
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 50px;
     padding-top: 50px;
     flex-direction: column;
     z-index: 20;
@@ -115,11 +115,7 @@ const LandingPageStyle = styled.div`
     font-size: 50px;
     color: #fff;
    }
-  
-
 }
-
-
 
   .nav{
     width: fit-content;

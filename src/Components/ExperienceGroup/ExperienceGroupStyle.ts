@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ExperienceGroupStyle = styled.div`
   font-size: 14px;
-  padding: 30px 20px 0 20px;
+  padding: 0 20px 0 20px;
   width: 100%;
   height: 100%;
 

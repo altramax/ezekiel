@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ExperienceStyle = styled.div`
   .experience__container {
-    padding: 20px;
+    padding: 0px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
     border-radius: 10px;
     margin: 30px 0;

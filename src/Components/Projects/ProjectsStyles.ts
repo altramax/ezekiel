@@ -28,10 +28,11 @@ const ProjectStyle = styled.div`
   .language__group {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
   }
 
   .fadein__left {
@@ -60,10 +61,10 @@ const ProjectStyle = styled.div`
     .text__group {
       width: 60%;
     }
+    .language__group {
+      justify-content: start;
+    }
   }
 
-  .language__group {
-    justify-content: start;
-  }
 `;
 export default ProjectStyle;
