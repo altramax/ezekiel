@@ -7,21 +7,19 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Sections = () => {
   const [selectedPath, setSelectedPath] = useState<string>("aboutMe");
-  const [color, setColor]= useState(false)
 
   const selectorHandler = (path: string) => {
     setSelectedPath(path);
   };
- 
 
-  const colorChange = (evt: boolean)=>{
-   setColor(evt)
-  }
+
 
   return (
     <SectionsStyle>
       <div className="section__container">
-        <ul className={`section__ul ${color === true ? "background-color" : ""}`}>
+        <ul
+          className={`section__ul`}
+        >
           <li
             onClick={() => {
               selectorHandler("aboutMe");
@@ -29,7 +27,7 @@ const Sections = () => {
           >
             <p className={selectedPath === "aboutMe" ? "active" : ""}>About</p>
             {selectedPath === "aboutMe" ? (
-              <motion.div className='underline' layoutId='underline' />
+              <motion.div className="underline" layoutId="underline" />
             ) : null}
           </li>
           <li
@@ -42,7 +40,7 @@ const Sections = () => {
               Experience
             </p>
             {selectedPath === "experience" ? (
-              <motion.div className='underline' layoutId='underline' />
+              <motion.div className="underline" layoutId="underline" />
             ) : null}
           </li>
           <li
@@ -54,12 +52,12 @@ const Sections = () => {
               Projects
             </p>
             {selectedPath === "projects" ? (
-              <motion.div className='underline' layoutId='underline' />
+              <motion.div className="underline" layoutId="underline" />
             ) : null}
           </li>
         </ul>
         {selectedPath === "aboutMe" ? (
-          <AnimatePresence mode='wait'>
+          <AnimatePresence mode="wait">
             <motion.div
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -70,7 +68,9 @@ const Sections = () => {
             </motion.div>
           </AnimatePresence>
         ) : null}
-        {selectedPath === "experience" ? <ExperienceGroup color={colorChange}/> : null}
+        {selectedPath === "experience" ? (
+          <ExperienceGroup />
+        ) : null}
         {selectedPath === "projects" ? <ProjectGroup /> : null}
       </div>
     </SectionsStyle>

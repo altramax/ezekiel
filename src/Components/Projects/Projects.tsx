@@ -7,11 +7,10 @@ interface projectType {
   image: any;
   text: string;
   link: string;
+  languages: string[];
 }
 
-const Projects = ({ image, text, link }: projectType) => {
-
-
+const Projects = ({ image, text, link, languages }: projectType) => {
   useEffect(() => {
     const observer = new IntersectionObserver(callBack, options);
     observer.observe(proj.current);
@@ -23,13 +22,8 @@ const Projects = ({ image, text, link }: projectType) => {
     entries.forEach((entry: any) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("fadein__right");
-        // entry.target.classList.remove("fadein__left");
-
-
       } else {
         entry.target.classList.remove("fadein__right");
-        // entry.target.classList.add("fadein__left  ");
-
       }
     });
   };
@@ -38,18 +32,18 @@ const Projects = ({ image, text, link }: projectType) => {
 
   return (
     <ProjectStyle>
-      <div className='project__group' ref={proj}>
-        <div className='img__group'>
-          <Link to={link} target='_blank'>
-            <img src={image} alt='' />{" "}
+      <div className="project__group" ref={proj}>
+        <div className="img__group">
+          <Link to={link} target="_blank">
+            <img src={image} alt="" />{" "}
           </Link>
         </div>
-        <div className='text__group'>
-          <p className='text'>{text}</p>
-          <div className='language__group'>
-            <Language language='HTML' />
-            <Language language='CSS' />
-            <Language language='JAVASCRIPT' />
+        <div className="text__group">
+          <p className="text">{text}</p>
+          <div className="language__group">
+            {languages.map((language) => {
+              return <Language language={language} />;
+            })}
           </div>
         </div>
       </div>

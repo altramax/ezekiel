@@ -23,7 +23,6 @@ const SectionsStyle = styled.div`
     li {
       cursor: pointer;
       p {
-        // color: #00246B;
         font-weight: 600;
         padding: 10px;
       }
@@ -31,7 +30,6 @@ const SectionsStyle = styled.div`
   }
 
   .underline {
-    // position: absolute;
     bottom: -1px;
     left: 0;
     right: 0;
@@ -47,14 +45,10 @@ const SectionsStyle = styled.div`
 
   @media (min-width: 768px) {
     width: 55%;
-    // height: 100%;
-    // position: relative;
-    //   width: 50%;
     margin-left: auto;
     .section__ul {
       padding: 50px 50px 20px 50px;
       width: 100%;
-    // padding: 40px;
       position: sticky;
 
       top: 0;

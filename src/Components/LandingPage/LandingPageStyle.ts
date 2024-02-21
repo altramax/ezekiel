@@ -23,11 +23,9 @@ const LandingPageStyle = styled.div`
     top: 20px;
     left: 20px;
     fill: #e6e6e7;
-    // z-index: 1;
   }
 
   .svg-container2 {
-    // z-index: 1 !important;
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -100,7 +98,6 @@ const LandingPageStyle = styled.div`
     padding-top: 50px;
     flex-direction: column;
     z-index: 20;
-    // overflow: auto;
   }
 
 .header__container::-webkit-scrollbar{
@@ -109,16 +106,13 @@ const LandingPageStyle = styled.div`
 
 
 .header__container{
-  // box-shadow: 25px 25px 50px #808080;
   width: 100%;
   height: 70%;
   overflow: auto;
-  // cursor: pointer;
   z-index:2;
 
   h3{
     font-size: 50px;
-    // margin-bottom: -20px;
     color: #fff;
    }
   
@@ -133,7 +127,6 @@ const LandingPageStyle = styled.div`
     bottom: 60px;
     .section__ul{
         transition: background-color 0.3s ease-in;
-        // padding: 0 20px;
         margin: auto;
         list-style: none;
         display: flex;
@@ -166,9 +159,6 @@ const LandingPageStyle = styled.div`
 .homepage{
   padding-top: 70px;
 }
-
-  
-
 
     .profile {
       font-size: 10px;

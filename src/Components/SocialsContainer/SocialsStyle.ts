@@ -4,8 +4,6 @@ const SocialsStyle = styled.div`
 
 .main__container{
     background-color: #000;
-    // width: 4px;
-    
     position: absolute;
     left: 0px;
     bottom: 40px;

@@ -4,7 +4,6 @@ const ProjectStyle = styled.div`
   .project__group {
     transform: translateX(-100%);
     transition: opacity 0.5s ease, transform 0.5s ease;
-    // background: #fff;
     width: 100%;
     margin-bottom: 40px;
     padding: 20px;
@@ -19,25 +18,20 @@ const ProjectStyle = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    // transform: translateX(-100%);
-    // transition: opacity 0.5s ease, transform 0.5s ease;
     img {
-      width: fit-content;
+      width: 200px;
       height: 150px;
-      border-radius: 20px;
+      border-radius: 8px;
     }
   }
-
-  // .text__group {
- 
-  // }
 
   .language__group {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    //   padding-left: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .fadein__left {
@@ -55,12 +49,11 @@ const ProjectStyle = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
     }
     .img__group {
       width: 30%;
       img {
-        height: 90px;
+        width: 180px;
       }
     }
 
