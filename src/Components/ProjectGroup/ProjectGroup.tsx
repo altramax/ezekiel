@@ -5,6 +5,7 @@ import etravels from "../../assets/images/e-travels.png";
 import weather from "../../assets/images/weather app.png";
 import note from "../../assets/images/note-app.png";
 import ecommerce from "../../assets/images/ecommerce.png";
+import webflow from '../../assets/images/WordPress.png'
 
 const ProjectGroup = () => {
   const project4 = {
@@ -42,7 +43,16 @@ const ProjectGroup = () => {
     languages: ["TYPESCRIPT", "REACT", "SASS", "HTML"],
   };
 
-  const projects = [project1, project2, project3, project4, project5];
+  const projectwebflow = {
+    text: "This is a Webflow website for an interior decoration company, it contains only two pages because it was done using the webflow free version",
+    image: `${webflow}`,
+    link: "https://blaqinteriorshome.webflow.io/",
+    languages: ["Webflow", "HTML", "CSS", "JAVASCRIPT"],
+  };
+
+  
+
+  const projects = [project1, projectwebflow, project2, project3, project4, project5];
 
   return (
     <ProjectGroupStyle>
