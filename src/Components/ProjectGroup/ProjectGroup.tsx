@@ -5,7 +5,8 @@ import etravels from "../../assets/images/e-travels.png";
 import weather from "../../assets/images/weather app.png";
 import note from "../../assets/images/note-app.png";
 import ecommerce from "../../assets/images/ecommerce.png";
-import webflow from '../../assets/images/WordPress.png'
+import webflow from '../../assets/images/WordPress.png';
+import musicApp from "../../assets/images/musicapp.png"
 
 const ProjectGroup = () => {
   const project4 = {
@@ -50,9 +51,16 @@ const ProjectGroup = () => {
     languages: ["Webflow", "HTML", "CSS", "JAVASCRIPT"],
   };
 
+  const musicAppData= {
+    text: "This is a music streaming website connected to the Deezer api. you can view artist of the week, top rated artist and also search for song",
+    image: `${musicApp}`,
+    link: "https://songstream.netlify.app/",
+    languages: ["React","TypeScript", "Redux", "Styled Component"],
+  };
+
   
 
-  const projects = [project1, projectwebflow, project2, project3, project4, project5];
+  const projects = [project1, musicAppData, projectwebflow, project2, project3, project4, project5];
 
   return (
     <ProjectGroupStyle>
