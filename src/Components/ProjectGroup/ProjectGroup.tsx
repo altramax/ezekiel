@@ -4,8 +4,7 @@ import calculator from "../../assets/images/calculator.png";
 import etravels from "../../assets/images/e-travels.png";
 import weather from "../../assets/images/weather app.png";
 import note from "../../assets/images/note-app.png";
-import ecommerce from "../../assets/images/ecommerce.png";
-import webflow from '../../assets/images/WordPress.png';
+import ecommerce from "../../assets/images/og.png";
 import musicApp from "../../assets/images/musicapp.png"
 
 const ProjectGroup = () => {
@@ -38,17 +37,10 @@ const ProjectGroup = () => {
   };
 
   const project1 = {
-    text: "This is an Ecommerce Web app. Users can shop and visit various catergories of the web app. I'm currently working on a more interactive and market friendly verision of the app that involves a merchant side and a client side ",
+    text: "OGWears is a sleek and easy-to-use clothing app that makes online shopping a breeze. Users can browse a curated selection of styles, add items to their cart, and complete purchases—all in one place. Designed with a focus on simplicity and smooth navigation, OGWears delivers a seamless shopping experience that keeps fashion lovers coming back for more.",
     image: `${ecommerce}`,
-    link: "https://e-commerce-fxo6bvsl1-altramax.vercel.app/",
-    languages: ["TYPESCRIPT", "REACT", "SASS", "HTML"],
-  };
-
-  const projectwebflow = {
-    text: "This is a Webflow website for an interior decoration company, it contains only two pages because it was done using the webflow free version",
-    image: `${webflow}`,
-    link: "https://blaqinteriorshome.webflow.io/",
-    languages: ["Webflow", "HTML", "CSS", "JAVASCRIPT"],
+    link: "https://ogwears.com.ng/",
+    languages: ["TYPESCRIPT", "REACT", "JAVASCRIPT", "HTML"],
   };
 
   const musicAppData= {
@@ -60,7 +52,7 @@ const ProjectGroup = () => {
 
   
 
-  const projects = [project1, musicAppData, projectwebflow, project2, project3, project4, project5];
+  const projects = [project1, musicAppData, project2, project3, project4, project5];
 
   return (
     <ProjectGroupStyle>
