@@ -1,7 +1,5 @@
 import ProjectGroupStyle from "./ProjectGroupStyle";
 import Projects from "../Projects/Projects";
-import calculator from "../../assets/images/calculator.png";
-import etravels from "../../assets/images/e-travels.png";
 import weather from "../../assets/images/weather app.png";
 import note from "../../assets/images/note-app.png";
 import ecommerce from "../../assets/images/og.png";
