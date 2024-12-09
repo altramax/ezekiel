@@ -8,19 +8,7 @@ import ecommerce from "../../assets/images/og.png";
 import musicApp from "../../assets/images/musicapp.png"
 
 const ProjectGroup = () => {
-  const project4 = {
-    text: "This is a Calculator built using string and maths methodes, it demonstrates the dynamics of sting methodes. The simple u.i was done with neumorphism",
-    image: `${calculator}`,
-    link: "https://altramax.github.io/Calculator-With-Neumorphism/",
-    languages: ["HTML", "CSS", "JAVASCRIPT"],
-  };
 
-  const project5 = {
-    text: "E tavels is a basic travel website. It allows the user to explore the various destinations available to travel.",
-    image: `${etravels}`,
-    link: "https://altramax.github.io/E-Travels-website/",
-    languages: ["HTML", "CSS", "JAVASCRIPT"],
-  };
 
   const project2 = {
     text: "This is a Weather app that predicts the weather for the next seven days based on your current gio-location. It employs the use of a third party api for the predictions.",
@@ -52,7 +40,7 @@ const ProjectGroup = () => {
 
   
 
-  const projects = [project1, musicAppData, project2, project3, project4, project5];
+  const projects = [project1, musicAppData, project2, project3];
 
   return (
     <ProjectGroupStyle>

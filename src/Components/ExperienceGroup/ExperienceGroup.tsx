@@ -1,6 +1,5 @@
 import ExperienceGroupStyle from "./ExperienceGroupStyle";
-import Experience from "../Experience/Experience";
-import { experienceType } from "../Experience/Experience";
+import Experience,{ experienceType } from "../Experience/Experience";
 
 const ExperienceGroup = () => {
   const exp2: experienceType = {
@@ -18,7 +17,7 @@ const ExperienceGroup = () => {
   const exp1: experienceType = {
     key: 2,
     position: "Frontend-Developer",
-    year: "2021 - till date",
+    year: "2021 - 2023",
     title: "Crestmark Teachnologies Limited",
     body: [
       "Worked closely with UX/UI designers to transform their designs into functional web applications",
@@ -30,7 +29,24 @@ const ExperienceGroup = () => {
     ],
   };
 
-  const experiences = [exp1, exp2];
+  const exp3: experienceType = {
+    key: 3,
+    position: "Frontend-Developer",
+    year: "2024 - Current (Remote)",
+    title: "Toye Technology",
+    body: [
+      "Collaborated with cross-functional teams, including Backend developers, Product Managers, and QA engineers, to deliver scalable web applications",
+      "Led the development of key features, ensuring seamless user experiences using React and TypeScript",
+      "Implemented responsive designs for diverse devices and screen sizes",
+      "Improved application performance by identifying and resolving bottlenecks in the codebase",
+      "Integrated third-party APIs, ensuring robust communication between frontend components and backend services",
+      "Mentored junior developers, sharing best practices in code quality and debugging",
+      "Conducted regular code reviews to maintain high development standards",
+      "Partnered with UI/UX designers to align designs with business objectives and user feedback",
+    ],
+  };
+
+  const experiences = [exp1, exp2, exp3];
 
   return (
     <ExperienceGroupStyle>
