@@ -46,7 +46,7 @@ const ExperienceGroup = () => {
     ],
   };
 
-  const experiences = [exp1, exp2, exp3];
+  const experiences = [ exp3, exp2, exp1];
 
   return (
     <ExperienceGroupStyle>
